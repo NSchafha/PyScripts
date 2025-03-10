@@ -1,4 +1,4 @@
-def matrix_chain_order(dimensions):
+def min_mul(dimensions):
     n = len(dimensions) - 1  # Number of matrices is len(dimensions) - 1
 
     # dp[i][j] stores the minimum cost of multiplying matrices from i to j
@@ -19,5 +19,5 @@ def matrix_chain_order(dimensions):
 
 # Example usage:
 dimensions = [10, 5, 2, 100, 20]  # Example input: 4 matrices
-min_cost = matrix_chain_order(dimensions)
+min_cost = min_mul(dimensions)
 print(f"Minimum cost of matrix chain multiplication: {min_cost}")
