@@ -28,11 +28,11 @@ int main(void)
     cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
     printf("Time taken: %f\n", cpu_time_used);
 
-    // start = clock();
-    // printf("Number of subsets Brute: %d\n", subsetSumBrute(S1, t1, n1));
-    // end = clock();
-    // cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-    // printf("Time taken: %f\n", cpu_time_used);
+    start = clock();
+    printf("Number of subsets Brute: %d\n", subsetSumBrute(S1, t1, n1));
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Time taken: %f\n", cpu_time_used);
 
 
     printf("Test case 2\n");
